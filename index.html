@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfort Architectural Finishing Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans bg-gray-50 scroll-smooth">
+    <!-- Navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-2xl font-bold text-blue-800">CAF Ltd</h1>
+        <nav class="space-x-6 text-gray-700 font-medium">
+          <a href="#projects" class="hover:text-blue-800 transition"
+            >Projects</a
+          >
+          <a href="#services" class="hover:text-blue-800 transition"
+            >Services</a
+          >
+          <a href="#about" class="hover:text-blue-800 transition">About</a>
+          <a href="#testimonials" class="hover:text-blue-800 transition"
+            >Testimonials</a
+          >
+          <a href="#contact" class="hover:text-blue-800 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('https://via.placeholder.com/1920x1080')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-6"
+      >
+        <h2
+          class="text-5xl md:text-6xl font-bold text-white mb-4"
+          data-aos="fade-up"
+        >
+          Building the Future of Nigeria
+        </h2>
+        <p
+          class="text-lg md:text-2xl text-gray-200 mb-8"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Quality Construction, Real Estate & Architectural Solutions
+        </p>
+        <a
+          href="#contact"
+          class="bg-yellow-400 text-blue-800 font-bold py-3 px-6 rounded-lg hover:bg-yellow-300 transition"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          >Contact Us</a
+        >
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 container mx-auto">
+      <h2
+        class="text-4xl font-bold text-center mb-12 text-blue-800"
+        data-aos="fade-up"
+      >
+        Our Services
+      </h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div
+          class="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-500"
+          data-aos="fade-up"
+        >
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">Construction</h3>
+          <p>
+            Residential, commercial, and institutional construction with modern
+            techniques and top-quality standards.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-500"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">
+            Architectural Design
+          </h3>
+          <p>
+            Innovative architectural solutions tailored for functionality,
+            aesthetics, and efficiency.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-500"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <h3 class="text-xl font-semibold mb-3 text-blue-800">
+            Real Estate Development
+          </h3>
+          <p>
+            Planning and executing sustainable properties that combine luxury,
+            comfort, and modern design.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Slider) -->
+    <section id="projects" class="py-24 px-6 bg-gray-100">
+      <h2
+        class="text-4xl font-bold text-center mb-12 text-blue-800"
+        data-aos="fade-up"
+      >
+        Our Projects
+      </h2>
+      <div
+        class="relative w-full max-w-6xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="overflow-hidden relative">
+          <div class="flex transition-transform duration-500" id="slider">
+            <div class="min-w-full p-4">
+              <img
+                src="images/Resizer_16846513702981.jpeg"
+                alt="Heritage Court 2"
+                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+              <h3 class="text-xl font-semibold mt-4 text-blue-800">
+                Heritage Court 2
+              </h3>
+              <p>
+                32-unit residential development in Lekki, Lagos, designed for
+                modern living.
+              </p>
+            </div>
+            <div class="min-w-full p-4">
+              <img
+                src="images/image copy.png"
+                alt="Maternal & Child Center"
+                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+              <h3 class="text-xl font-semibold mt-4 text-blue-800">
+                Maternal & Child Center
+              </h3>
+              <p>
+                140-bed health facility focused on maternal and child healthcare
+                services.
+              </p>
+            </div>
+            <div class="min-w-full p-4">
+              <img
+                src="images/image.png"
+                alt="Faith Legacy Estate"
+                class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+              <h3 class="text-xl font-semibold mt-4 text-blue-800">
+                Faith Legacy Estate
+              </h3>
+              <p>
+                Luxury residential estate combining comfort, security, and
+                sustainable design.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Slider Controls -->
+        <div class="flex justify-center mt-6 space-x-4">
+          <button
+            id="prev"
+            class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            Prev
+          </button>
+          <button
+            id="next"
+            class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 container mx-auto">
+      <h2
+        class="text-4xl font-bold text-center mb-12 text-blue-800"
+        data-aos="fade-up"
+      >
+        What Our Clients Say
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+          <p>
+            "CAF Ltd exceeded our expectations! Their team delivered our project
+            on time and with exceptional quality."
+          </p>
+          <h4 class="font-semibold mt-4 text-blue-800">– Adeola, Lagos</h4>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <p>
+            "Professional and innovative. CAF Ltd transformed our vision into
+            reality with attention to detail."
+          </p>
+          <h4 class="font-semibold mt-4 text-blue-800">– Chinedu, Abuja</h4>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <p>
+            "Working with CAF Ltd was seamless. Their team is highly skilled and
+            communicative."
+          </p>
+          <h4 class="font-semibold mt-4 text-blue-800">– Fatima, Lagos</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 container mx-auto">
+      <h2
+        class="text-4xl font-bold text-center mb-12 text-blue-800"
+        data-aos="fade-up"
+      >
+        About CAF Ltd
+      </h2>
+      <p
+        class="text-center max-w-3xl mx-auto text-gray-700 text-lg"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Comfort Architectural Finishing Ltd (CAF Ltd) is a Nigerian
+        construction, architectural, and real estate development firm committed
+        to delivering high-quality, sustainable projects. With expertise in
+        residential, commercial, and public infrastructure, CAF Ltd combines
+        innovation, efficiency, and attention to detail to bring your vision to
+        life.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-blue-800 text-white">
+      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">
+        Get in Touch
+      </h2>
+      <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <form class="space-y-6">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-4 rounded text-gray-800"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-4 rounded text-gray-800"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            class="w-full p-4 rounded text-gray-800"
+            rows="5"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-yellow-400 text-blue-800 font-bold py-4 rounded-lg hover:bg-yellow-300 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="hover:text-white transition">Instagram</a>
+        <a href="#" class="hover:text-white transition">LinkedIn</a>
+        <a href="#" class="hover:text-white transition">Twitter</a>
+      </div>
+      &copy; 2025 Comfort Architectural Finishing Ltd. All rights reserved.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Slider functionality
+      const slider = document.getElementById("slider");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      let index = 0;
+
+      prev.addEventListener("click", () => {
+        index = index > 0 ? index - 1 : 2;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      });
+
+      next.addEventListener("click", () => {
+        index = index < 2 ? index + 1 : 0;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      });
+    </script>
+  </body>
+</html>
